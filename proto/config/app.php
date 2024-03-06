@@ -279,7 +279,7 @@ return [
          * in app_local.php depending on the applications needs.
          */
         'default' => [
-            'className' => 'Cake\Database\Connection',
+            'className' => Connection::class,
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
             'host' => 'localhost', // Cambia esto si tu base de datos está en otro servidor
