@@ -9,45 +9,21 @@
 
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">Mi Página</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
     
 <!-- Contenido principal -->
 <div class="container mt-4">
   <div class="jumbotron">
-    <h1 class="display-4">¡Bienvenido a Mi Página!</h1>
-    <p class="lead">Aquí encontrarás información interesante sobre computadoras.</p>
+    <h1 class="display-4" style="font-size: 700%;">¡Bienvenido a tu inventario!</h1>
+    <h1 class="lead" style="font-size: 250%;">Aquí encontrarás los enlaces para la gestion sobre las computadoras de cada zona.</h1>
     
-    <?= $this->Html->link('Crud de Producción', ['controller' => 'Produccion', 'action' => 'index']) ?><br>
-    <?= $this->Html->link('Crud de Bodega', ['controller' => 'Bodega', 'action' => 'index']) ?><br>
-    <?= $this->Html->link('Crud de Oficina', ['controller' => 'Oficina', 'action' => 'index']) ?>
-    <h3 class="btn btn-danger"><?= $this->Html->link('Crud de Oficina', ['controller' => 'Oficina', 'action' => 'index']) ?></h3>
+    <h3 class="btn btn-danger" style="color:cornsilk; font-size: 400%"><?= $this->Html->link('Crud de Oficina', ['controller' => 'Oficina', 'action' => 'index']) ?></h3>
+    <h3 class="btn btn-warning" style="color:cornsilk; font-size: 400%"><?= $this->Html->link('Crud de Producción', ['controller' => 'produccion', 'action' => 'index']) ?></h3>
+    <h3 class="btn btn-dark" style="color:cornsilk; font-size: 400%"><?= $this->Html->link('Crud de Bodega', ['controller' => 'bodega', 'action' => 'index']) ?></h3>
 
   </div>
   <div class="row">
     <div class="col-md-6 offset-md-3">
-      <img src="ruta/a/imagen/computadora.jpg" class="img-fluid" alt="Imagen de Computadora">
+      <img src="https://www.configuroweb.com/wp-content/uploads/2022/11/CRUD-PHP-en-MySQL.jpg" class="img-fluid" alt="Imagen de Computadora">
     </div>
   </div>
 </div>
